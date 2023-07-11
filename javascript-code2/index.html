@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Box App</title>
+</head>
+<body>
+    <input type="text" id="inputBox" placeholder="Enter text">
+    <button onclick="addText()">Submit</button>
+    <div id="output"></div>
+
+    <script>
+        function addText() {
+            var inputText = document.getElementById("inputBox").value;
+            var outputDiv = document.getElementById("output");
+            var newParagraph = document.createElement("p");
+            newParagraph.textContent = inputText;
+            outputDiv.appendChild(newParagraph);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #box{
+            margin: auto;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">
+
+    </div>
+
+
+    <script>
+
+        var box = document.getElementById('box');
+        box.addEventListener('click', function(){
+            box.style.backgroundColor = 'yellow';
+            box.style.width = '600px';
+            box.style.height = '600px';
+
+
+        });
+
+    </script>
+    
+</body>
+</html>
